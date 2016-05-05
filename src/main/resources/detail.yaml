@@ -1,0 +1,20 @@
+topology.name: SequenceTest
+topology.workers: 1
+topology.max.spout.pending: 1000
+topology.acker.executors: 1
+topology.debug: false
+topology.debug.recv.tuple: false
+storm.cluster.mode: "local"
+
+spout.parallel: 3
+bolt.parallel: 1
+#kafka config
+kafka.topic: "my-replicated-topic5"
+storm.zookeeper.root: "/kafka"
+kafka.broker.partitions: 3
+kafka.zookeeper.hosts: "10.33.96.241:2181,10.33.96.242:2181,10.33.96.243:2181"
+kafka.broker.hosts: "10.33.96.241:9092,10.33.96.242:9092,10.33.96.243:9092"
+kafka.client.id: "jstorm"
+kafka.fetch.from.beginning: false
+#kafka.zookeeper.hosts: "127.0.0.1:2181"
+#kafka.broker.hosts: "127.0.0.1:9092"
