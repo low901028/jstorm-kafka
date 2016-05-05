@@ -9,11 +9,11 @@ storm.cluster.mode: "local"
 spout.parallel: 3
 bolt.parallel: 1
 #kafka config
-kafka.topic: "my-replicated-topic5"
+kafka.topic: "topic5"
 storm.zookeeper.root: "/kafka"
 kafka.broker.partitions: 3
-kafka.zookeeper.hosts: "10.33.96.241:2181,10.33.96.242:2181,10.33.96.243:2181"
-kafka.broker.hosts: "10.33.96.241:9092,10.33.96.242:9092,10.33.96.243:9092"
+kafka.zookeeper.hosts: "10.33.96.21:2181,10.33.96.22:2181,10.33.96.23:2181"
+kafka.broker.hosts: "10.33.96.21:9092,10.33.96.22:9092,10.33.96.23:9092"
 kafka.client.id: "jstorm"
 kafka.fetch.from.beginning: false
 #kafka.zookeeper.hosts: "127.0.0.1:2181"
